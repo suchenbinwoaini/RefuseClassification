@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div id="main">
     <el-carousel :interval="4000" type="card">
       <el-carousel-item v-for="item in 6" :key="item" ></el-carousel-item>
     </el-carousel>
-    <div style="font-size: xxx-large;font-weight: bolder;margin-bottom: 25px">欢迎来到汽车俱乐部管理系统</div>
-    <div><span style="font-size: xx-large">队长：汪子茵</span></div>
-    <div><span style="font-size: xx-large">队员：刘紫暄、韩文华、石子涵、曹桐桐</span></div>
+    <div style="font-size: xxx-large;font-weight: bolder;margin-bottom: 25px;color: #819D6A">垃圾分类，从我做起！</div>
+
+    <div><span class="author">版权所有：汪子茵、刘紫暄、韩文华、杜睿凯</span></div>
 
   </div>
 
@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style>
+body{
+  background-image: url("../../../src/assets/background.png");
+}
 .el-carousel__item h3 {
   color: #475669;
   font-size: 14px;
@@ -57,10 +60,8 @@ export default {
   -o-background-size: cover;
   background-size: cover;
 }
-.el-carousel__item:nth-child(6n+5) {
-  background: url("../../assets/i6.png");
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.author{
+  font-size: small;
+  color: #cccccc;
 }
 </style>
